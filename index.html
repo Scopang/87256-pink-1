@@ -2,11 +2,227 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Pink</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+    <!--=====ХЕДЕР====================================================-->
 
-  </body>
+    <header class="page-header">
+      <div class="wrap wrap__header">
+        <input class="checkbox-menu" type="checkbox" id="checkbox-menu" name="checkbox-menu">
+        <div class="container">
+          <a href="index.html" class="glasses"></a>
+          <a href="index.html" class="logo"></a>
+          <label class="icon-menu" for="checkbox-menu"></label>
+        </div>
+        <nav class="main-nav">
+          <div class="container">
+            <a href="index.html" class="glasses"></a>
+            <a href="index.html" class="logo"></a>
+            <label class="icon-menu icon-menu--close" for="checkbox-menu"></label>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#info" class="main-nav__link">Информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#blog" class="main-nav__link">Блог</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#reviews" class="main-nav__link">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">Конкурс</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="text-title">Взгляните на жизнь иначе!</h1>
+      </div>
+    </header>
+
+    <!--=====ПРИЛОЖЕНИЯ====================================================-->
+
+    <article class="mob-app">
+      <div class="wrap">
+        <a href="#download" class="download-btn">Скачать приложение</a>
+        <div class="download-link">
+          <div class="download-link__icon  download-link__icon--apple"></div>
+          <div class="download-link__icon  download-link__icon--android"></div>
+          <div class="download-link__icon  download-link__icon--ms" ></div>
+        </div>
+        <p class="text-primary">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+    </article>
+
+    <!--=====ПРЕИМУЩЕСТВА ПРИЛОЖЕНИЯ====================================================-->
+    <!--=====Заголовок====================================================-->
+    <section class="advantage-app">
+      <div class="wrap">
+        <h1 class="text-title">
+          Устали от серости мегаполиса?<br><br>Нам есть, что вам предложить!
+        </h1>
+      </div>
+      <div class="triangle">
+    <!--=====Список преимуществ====================================================-->
+        <div class="wrap">
+          <h2 class="text-primary-bold">Поднимает настроение</h2>
+          <p class="text-primary">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+          <h2 class="text-primary-bold">Меняет мир вокруг</h2>
+          <p class="text-primary">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+          <h2 class="text-primary-bold">Заводит новых друзей</h2>
+          <p class="text-primary">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="effect">
+      <h2 class="text-primary-bold">Эффект<br>на 24 часа!</h2>
+      <p class="text-primary">Британские учёные провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки! <a href="#" class="more">Узнать больше об исследовании</a></p>
+    </section>
+    <!--=====ОТЗЫВЫ====================================================-->
+
+    <section class="slider">
+      <div class="wrap">
+        <input class="slider__control" type="radio" id="review1" name="radio-review" checked>
+        <input class="slider__control" type="radio" id="review2" name="radio-review">
+        <input class="slider__control" type="radio" id="review3" name="radio-review">
+        <blockquote class="slider-item slider-item--1">
+          <h2 class="text-primary-bold">Николай Петров</h2>
+          25 лет, водитель трамвая
+          <p class="text-primary">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <blockquote class="slider-item slider-item--2">
+          <h2 class="text-primary-bold">Вася Иванов</h2>
+          30 лет, водитель автобуса
+          <p class="text-primary">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <blockquote class="slider-item slider-item--3">
+          <h2 class="text-primary-bold">Леонид Ильич</h2>
+          35 лет, пилот боинга
+          <p class="text-primary">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!» «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <div class="slider__btn-group">
+          <label for="review1" class="slider__btn-item"></label>
+          <label for="review2" class="slider__btn-item"></label>
+          <label for="review3" class="slider__btn-item"></label>
+        </div>
+      </div>
+    </section>
+
+    <!--=====ЦЕНЫ===================================================-->
+
+    <section class="prices">
+      <div class="wrap">
+        <input class="prices__control" type="radio" id="prices1" name="prices">
+        <input class="prices__control" type="radio" id="prices2" name="prices" checked>
+        <input class="prices__control" type="radio" id="prices3" name="prices">
+        <table class="compare-table">
+    <!--=====Заглавный ряд===================================================-->
+          <tr class="compare-table__row">
+            <th class="compare-table__title">
+              <h2 class="text-primary-bold">Лайт</h2>
+              <span class="text-title">0,99 USD</span>
+            </th>
+            <th class="compare-table__title">
+              <h2 class="text-primary-bold">Стандарт</h2>
+              <span class="text-title">3,99 USD</span>
+            </th>
+            <th class="compare-table__title">
+              <h2 class="text-primary-bold">Максимум</h2>
+              <span class="text-title">6,99 USD</span>
+            </th>
+          </tr>
+    <!--=====Первый ряд===================================================-->
+          <tr class="compare-table__row">
+            <td class="compare-table__data">
+              Розовый фильтр
+              <span class="icon-yes-no icon-yes-no--green-check"></span>
+            </td>
+            <td class="compare-table__data">
+              Розовый фильтр
+              <span class="icon-yes-no icon-yes-no--green-check"></span>
+            </td>
+            <td class="compare-table__data">
+              Розовый фильтр
+              <span class="icon-yes-no icon-yes-no--green-check"></span>
+            </td>
+          </tr>
+    <!--=====Второй ряд===================================================-->
+          <tr class="compare-table__row">
+            <td class="compare-table__data">
+              Смайлики
+              <span class="icon-yes-no icon-yes-no--red-cross"></span>
+            </td>
+            <td class="compare-table__data">
+              Смайлики
+              <span class="icon-yes-no icon-yes-no--green-check"></span>
+            </td>
+            <td class="compare-table__data">
+              Смайлики
+              <span class="icon-yes-no icon-yes-no--green-check"></span>
+            </td>
+          </tr>
+    <!--=====Третий ряд===================================================-->
+          <tr class="compare-table__row">
+            <td class="compare-table__data">
+              Комментарии
+              <span class="icon-yes-no icon-yes-no--red-cross"></span>
+            </td>
+            <td class="compare-table__data">
+              Комментарии
+              <span class="icon-yes-no icon-yes-no--red-cross"></span>
+            </td>
+            <td class="compare-table__data">
+              Комментарии
+              <span class="icon-yes-no icon-yes-no--green-check"></span>
+            </td>
+          </tr>
+        </table>
+        <div class="prices__btn-group">
+          <label for="prices1" class="prices__btn-item"></label>
+          <label for="prices2" class="prices__btn-item"></label>
+          <label for="prices3" class="prices__btn-item"></label>
+        </div>
+      </div>
+    </section>
+
+    <!--=====КОНТАКТЫ====================================================-->
+
+    <section class="contacts">
+      <div class="wrap">
+        <h1 class="text-title">Остались вопросы? Свяжитесь с нами!</h1>
+        <h2 class="text-primary-bold">Звоните:</h2>
+        <p class="text-title">+7&nbsp;(812)&nbsp;555-66-66</p>
+        <h2 class="text-primary-bold">Пишите:</h2>
+        <p class="text-title">mail@htmlacademy.ru</p>
+        <h2 class="text-primary-bold">Приезжайте в гости:</h2>
+        <p class="text-title">ул. Большая Конюшенная,&nbsp;19/8</p>
+      </div>
+    </section>
+
+    <!--=====КАРТА====================================================-->
+
+    <div class="map">
+      <div class="wrap"></div>
+    </div>
+
+    <!-- <script src="js/script.js"></script> -->
+    </body>
 </html>
