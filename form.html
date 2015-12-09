@@ -36,13 +36,7 @@
             </li>
           </ul>
         </nav>
-        <!--Тогда для реализации этого управления мы можем использовать следующие селекторы
-        .main-nav {
-        /* по умолчанию меню скрыто */
-        }
-        .checkbox-menu:checked + .main-nav {
-        /* отображаем меню, когда чекбокс включен */
-        }-->
+        <h1 class="text-title">Конкурс на самое безбашеное путешествие с Пинк</h1>
       </div>
     </header>
 
@@ -50,7 +44,7 @@
 
     <main class="page-main">
       <div class="wrap">
-        <h1 class="h1-title">Конкурс на самое безбашеное путешествие с Пинк</h1>
+
         <form action="#" class="form-contest" method="post">
           <p class="text-type">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
@@ -172,54 +166,46 @@
               <input class="checkbox__input" type="checkbox" id="hotel" name="hotel">
               <label class="checkbox__label" for="hotel">Разгромил отель</label>
             </div>
-          <!--Внешний div используется только как дополнительная обертка для удобства. Сам чекбокс будет нарисован при помощи псевдоэлемента у тега label. В стилях будут использоваться следующего вида селекторы
-          .checkbox__label:before {
-          /* стиль для отображения неактивного чекбокса */
-          }
-          .checkbox__input:checked + .checkbox__label:before {
-          /* стиль для отображения активного чекбокса */
-          }
-          Тот же самый подход можно использовать и в `radio`-->
           </fieldset>
     <!--=====Форма-Фото==================================================-->
           <fieldset class="form-contest__box form-contest__box--color-area">
             <legend class="form-contest__header-box">Ваши фотографии из поездки *</legend>
             <label for="photo" class="form__label">
-              <input class="form__hidden-input" type="file" id="photo" name="photo" required><span class="form__upload">Загрузить фото</span>
+              <input class="form__hidden-input" type="file" id="photo" name="photo" value="Загрузить фото" required>
             </label>
             <div class="separator-line"></div>
             <div class="photos">
               <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
                 <a href="#" class="photos-remove" title="Удалить"></a>
+                <img src="" alt=""><span class="photos__name">Photo</span>
               </div>
               <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
                 <a href="#" class="photos-remove" title="Удалить"></a>
+                <img src="" alt=""><span class="photos__name">Photo</span>
               </div>
               <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
+                <img src="" alt=""><span class="photos__name">Photo</span><a href="#" class="photos-remove" title="Удалить"></a>
+
+              </div>
+              <d<img src="" alt=""><span class="photos__name">Photo</span>iv class="photos__item">
                 <a href="#" class="photos-remove" title="Удалить"></a>
+
+              </<img src="" alt=""><span class="photos__name">Photo</span>div>
+              <div class="photos__item">
+                <a href="#" class="photos-remove" title="Удалить"></a>
+                <img src="" alt=""><span class="photos__name">Photo</span>
               </div>
               <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
+                <img src="" alt=""><span class="photos__name">Photo</span><a href="#" class="photos-remove" title="Удалить"></a>
+
+              </div>
+              <d<img src="" alt=""><span class="photos__name">Photo</span>iv class="photos__item">
                 <a href="#" class="photos-remove" title="Удалить"></a>
+
               </div>
               <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
                 <a href="#" class="photos-remove" title="Удалить"></a>
-              </div>
-              <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
-                <a href="#" class="photos-remove" title="Удалить"></a>
-              </div>
-              <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
-                <a href="#" class="photos-remove" title="Удалить"></a>
-              </div>
-              <div class="photos__item">
-                <img src="" alt=""><span class="photos__name">Photo</span>
-                <a href="#" class="photos-remove" title="Удалить"></a>
+
               </div>
             </div>
           </fieldset>

@@ -1,11 +1,12 @@
 .advantage-app .wrap{
   padding: 40px 0 42px 0;
 }
-
+.advantage-app .wrap:last-of-type{
+  padding-bottom: 0;
+}
 .triangle {
   position: relative;
   background-color: @background-color;
-  padding-bottom: 275px;
 }
 
 /*.triangle:before {
@@ -20,7 +21,16 @@
   outline: 1px dotted yellow;
 }*/
 
-@media (min-width: 700px) {
+.smile {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 160px;
+  height: 280px;
+  background: url('@{img}/screen-mobile-3.png') no-repeat 0 0;
+}
+
+@media (min-width: 660px) {
   .advantage-app .text-title {
     font: 100 4rem/2.4rem @font;
   }
