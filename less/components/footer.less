@@ -1,0 +1,32 @@
+.page-footer {
+  display: none;
+
+  @media (min-width: 660px) {
+    display: block;
+  }
+}
+
+.logo-footer {
+  display: inline-block;
+  float: left;
+}
+.social {
+  display: inline-block;
+
+  &__link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 0 10px;
+
+    &--twitter {
+      background: url('@{img}/twitter.svg') no-repeat 50% 50%;
+    }
+  }
+}
+.developer-footer {
+  display: inline-block;
+  float: right;
+}

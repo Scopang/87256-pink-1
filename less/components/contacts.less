@@ -1,9 +1,34 @@
-.contacts .wrap {
-  padding: 40px 0;
+.contacts .layout-center-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 960px) {
+    flex-direction: row;
+  }
+}
+
+.contacts-item {
+  width: 100%;
+
+  @media (min-width: 660px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 960px) {
+    width: 33%;
+  }
 }
 
 .map {
   background-color: @background-color;
+  background-image: url('@{img}/triangle-white-footer.svg');
+  background-repeat: no-repeat;
 }
 .map .wrap {
   height: 200px;

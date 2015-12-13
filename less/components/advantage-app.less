@@ -1,13 +1,90 @@
-.advantage-app .wrap{
-  padding: 40px 0 42px 0;
-}
-.advantage-app .wrap:last-of-type{
-  padding-bottom: 0;
-}
 .triangle {
   position: relative;
   background-color: @background-color;
+  background-image: url('@{img}/triangle-white.svg');
+  background-repeat: no-repeat;
 }
+
+.triangle .layout-center-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0;
+
+  @media (min-width: 660px) {
+    flex-direction: row;
+  }
+  @media (min-width: 960px) {
+    flex-direction: column;
+  }
+}
+
+.photo-smile {
+  display: flex;
+
+  @media (min-width: 660px) {
+    width: 50%;
+    margin: 0;
+  }
+  @media (min-width: 960px) {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+}
+
+.phone-smile {
+  height: 278px;
+  width: 158px;
+  margin: 0 auto;
+  background: url('@{img}/screen-mobile-3.png') no-repeat 0 0;
+
+  @media (min-width: 660px) {
+    height: 481px;
+    width: 268px;
+    margin-right: 10%;
+    background: url('@{img}/iphone-screen-tablet-3@1x.png') no-repeat 0 0;
+  }
+  @media (min-width: 960px) {
+    height: 302px;
+    width: 292px;
+    margin: 0;
+    background: url('@{img}/iphone-screen-desktop-1@1x.png') no-repeat 50% 0;
+  }
+
+  &--none {
+    display: none;
+
+    @media (min-width: 960px) {
+      display: block;
+    }
+  }
+}
+
+.text-text-smile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: 660px) {
+    width: 50%;
+  }
+  @media (min-width: 960px) {
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.text-smile-item {
+
+  @media (min-width: 660px) {
+    text-align: left !inherit;
+  }
+  @media (min-width: 960px) {
+    width: 252px;
+  }
+}
+
 
 /*.triangle:before {
   content: "";
@@ -20,24 +97,3 @@
   transform: rotate(-5.5deg);
   outline: 1px dotted yellow;
 }*/
-
-.smile {
-  display: block;
-  margin: 0 auto;
-  margin-top: 20px;
-  width: 160px;
-  height: 280px;
-  background: url('@{img}/screen-mobile-3.png') no-repeat 0 0;
-}
-
-@media (min-width: 660px) {
-  .advantage-app .text-title {
-    font: 100 4rem/2.4rem @font;
-  }
-
-  .advantage-app .text-primary-bold,
-  .advantage-app .text-primary {
-    padding-left: 50%;
-    text-align: left;
-  }
-}

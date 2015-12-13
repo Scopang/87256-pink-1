@@ -1,29 +1,28 @@
 .text-title {
   margin: 0;
-  padding: 0 20px;
-  font: 300 2.4rem/3rem @font;
+  font: 100 2.4rem/3rem @font;
   color: white;
   text-align: center;
 
-  .page-header & {
-    margin-top: 20px;
-  }
   .advantage-app & {
     color: @primary-color;
     line-height: 2.9rem;
   }
   .contacts & {
-    margin: 0 20px;
+    padding: 0;
+    width: 100%;
     color: @secondary-color;
   }
   .contacts &:first-child {
     color: @primary-color;
   }
+  .prices & {
+    padding: 0;
+  }
 }
 
 .text-primary {
   margin: 0;
-  padding: 0 20px;
   font: 400 1.4rem/2.4rem @font;
   color: black;
   text-align: center;
@@ -31,34 +30,50 @@
   .mob-app & {
     color: white;
   }
+  .advantage-app & {
+    @media (min-width: 660px) {
+      padding: 0;
+      text-align: left;
+    }
+    @media (min-width: 960px) {
+      padding: 0;
+      text-align: center;
+    }
+  }
   .effect & {
-    margin: 0 5% 0 50%;
     padding: 0;
     font: 400 1.4rem/2.4rem @font;
     text-align: left;
   }
   .slider & {
     padding-bottom: 33px;
-    line-height: 3rem;
+    font: 100 1.8rem/3rem @font;
   }
 }
 
 .text-primary-bold {
   margin: 0;
-  padding: 0 20px;
   font: 600 1.8rem/2.4rem @font;
   color: black;
   text-align: center;
 
   .advantage-app & {
-    margin: 31px 0 12px 0;
+    @media (min-width: 660px) {
+      padding: 0;
+      text-align: left;
+    }
+    @media (min-width: 960px) {
+      padding: 0;
+      text-align: center;
+    }
   }
+
   .advantage-app:first-child & {
     margin-top: 0;
   }
   .effect & {
     margin: 0;
-    padding: 96px 0 10px 50%;
+    padding: 0;
     font: 800 3rem/3.6rem @font;
     text-align: left;
   }
@@ -66,11 +81,9 @@
     margin-bottom: 16px;
   }
   .prices & {
+    padding: 0;
     color:white;
-    line-height: 3rem;
+    font: 800 1.6rem/3rem @font;
     text-transform: uppercase;
-  }
-  .contacts & {
-    margin-top: 28px;
   }
 }
